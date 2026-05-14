@@ -28,3 +28,7 @@ function shiftText() {
     counter++;
     document.getElementById("counter").textContent = counter;
 }
+// Copy gmail link
+function showCopied() {
+    alert("Link copied!");
+}
