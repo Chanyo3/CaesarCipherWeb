@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="design.css"> <!-- Connect CSS-->
+    <link rel="icon" href="./julius_Caesar.jpg"> 
+    <script src="./main.js" defer></script> <!-- Connect Javascript-->
+</head>
+<body>
+    <!-- Header -->
+     <h1>Caesar Cipher</h1>
+     <!-- Description of Caesar Cipher-->
+        <h2>Description</h2>
+        <p>Julius Caesar employed the Caesar cipher, a straightforward encryption method, to communicate with his supporters in secret. The "shift" or "key" is the number of positions by which the plaintext message's letters are shifted. One of the earliest and most basic encryption schemes is the Caesar Cypher.
+        <br><br>
+        It is essentially a kind of substitution cipher, in which every letter in a given text is swapped out for a letter that is located a certain number of positions lower in the alphabet. With a shift of one, for instance, B would take the place of A, B would become C, and so on. Julius Caesar is said to have utilized the technique to communicate with his officials, which is why it bears his name.
+        </p>
+        <!-- How the algorithm of caesar cipher works -->
+        <h2>Algorithm</h2>
+        <p>
+            <ul>
+                <li>Therefore, in order to encrypt a given text, we require an integer value called a shift that shows how far down each letter of the text has been shifted. 
+                By first converting the letters into integers in accordance with the system, A = 0, B = 1,..., Z = 25, the encryption can be expressed using modular arithmetic. The mathematical description of a letter encrypted by a shift n is as follows.</li>
+                <li>For instance, if the shift is 3, the letter A would become D, the letter B would become E, the letter C would become F, and so on. The alphabet is rotated so that it begins at A after Z.</li>
+            </ul>
+        </p>
+        <!-- Insert illustration of Caesar Cipher -->
+        <h2>Picture Illustration of Caesar Cipher</h2>
+        <img src="./ceaserCipher.png" alt="Illustration of caesar cipher encoding">
+        <!-- Input for Caesar Cipher -->
+        <div class="cipher_wrapper">
+        <div class="input_group">
+            <h2>Try Caesar Cipher Here!</h2>
+            <h3>Input your text below and let the magic begin</h3>
+
+            <textarea id="input"></textarea>
+            <button onclick="shiftText()">Shift</button>
+        </div>
+        <div class="output_group">
+            <h2>Output text</h2>
+            <h3>Here's the Magic!<br>Counter:</h3>
+
+            <h4 id="counter">0</h4>
+            <textarea id="output"></textarea>
+            </div>
+        </div>
+        <!-- Footer about the website, DON'T CHANGE!-->
+        <footer>
+        <h1>About the Developer</h1>
+        <p>This webiste is a project by Yohance Cunanan. A Computer Science Student from Saint Joseph Institute of Technology. A Non-Technical School from Butuan City, Philippines. He is an aspiring data analyst who is also inspired to learn about cryptography. Caesar Cipher is one of the basic cryptography that he learnt during his journey on hackathon 2026.</p>
+        <h2>Contect him through these links!</h2>
+        <a href="https://github.com/Chanyo3" target="_blank">Github</a>
+        <a href="https://www.facebook.com/yohance.cunanan/" target="_blank">Facebook</a>
+        <a href="cunananyohance@gmail.com" target="_blank">Gmail</a>
+        <img src="./Me_photo.jpg" alt="Developer Photo">
+        </footer>
+</body>
+</html>
